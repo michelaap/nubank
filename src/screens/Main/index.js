@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Animated } from 'react-native';
+
 import Header from '../../components/Header';
 import Tabs from '../../components/Tabs'; 
 import Card from '../../components/Card';
