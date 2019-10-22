@@ -11,9 +11,9 @@ import {
   Annotation
 } from './styles';
 
-export default function Card() {
+const Card = React.forwardRef((props, ref) => {
   return (
-    <CardContainer>
+    <CardContainer {...props} ref={ref}>
       <CardHeader>
         <Icon name='attach-money' size={28} color='#666' />
         <Icon name='visibility-off' size={28} color='#666' />
@@ -29,4 +29,6 @@ export default function Card() {
       </CardFooter>
     </CardContainer>
   )
-}
+});
+
+export default Card;
